@@ -53,6 +53,9 @@ body{
   background-color: #1A1A1A;
 }
 
+
+
+
 .button_bg:active {
   box-shadow: none;
   transform: translateY(0);
@@ -947,15 +950,18 @@ img {
 	position: relative;
     animation-duration: 0.3s;
 	animation-iteration-count: 1;
-	animation-timing-function: linear;
+	top: 0px;
+	animation-timing-function: ease;
 }
 
  @keyframes crownui {
   from {
 	  opacity: 0;
+	  top: -50px;
   }
   to {
 	  opacity: 1;
+	  top: 0px;
   }
 }
 
@@ -1054,6 +1060,7 @@ img {
   color: #888;
   filter: brightness(120%) saturate(0);
 }
+
 
 	
 

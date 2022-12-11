@@ -2,36 +2,42 @@
 <head>
     <title>Thumnail Maker</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="icon.png">
 </head>
-<body onLoad="onOpen()">
+<body onLoad="onOpen()"><center>
     <font size="5">
 	<p>
 	<b>Thumnail Creator for Showcase Video</b>
-	</font>
+	</font><br>
 	
 	<font size="3" style="color:#bbb">
 	basically you can create thumnail easily 
 	</font>
 	</p><br>
 	
+	<table border="0" align="center"><tr><td>
+	
 	<div class="previewbg">
 		<input type="file" class="input_bg" accept="image/*" hidden>
-		    <button class="button_bg">Choose Background</button>
+		    <button class="button_bg" data-tippy-content="Click to copy button 2">Choose Background</button>
 			<label id="lablebgex">
 			    <font size="3" style="color:#888">Use photo with ratio 1:1</font>
-			</label><br><br>
+			</label>
+			<br><br>
 			
 			    <img id="bgimg" src="img.jpg" width="400" height="400" alt="previewbg" >
-			<br><br>
+			<br><Br>
 	</div>
 	<div class="previewtn">
 		<input type="file" class="input_tn" accept="image/*" hidden>
 			<button class="button_tn">Choose Thumnail</button>
 			<label id="labletnex">
 			<font size="3" style="color:#888">Better crop worldshow from the game</font>
-			</label><br><br>
+			</label>
+			<br><br>
 			
 			    <font id="tnimgcode"><img  id="tnimg" src="img.jpg" width="400" height="400" alt="previewtn"></font>
+			<br>
 			
 	</div> <br>
 	<div class="entrelvlnameclass">
@@ -88,7 +94,7 @@
 		<button class="crown3"><img src="CrownUn.png" width="50"></button>
 		
 	    <label id="lablecrownex">
-			<font size="3" style="color:#888">Crown Number  (Click on the first crown to make 0 crown)</font>
+			<font size="3" style="color:#888">Crown Number</font>
 		</label>
 	</div> <br><br>
 		
@@ -197,12 +203,14 @@
 	    <span class="enablecrown">UI: Normal</span>
 	</label><br><br>
 	
+	</td></tr></table>
+	
 	<font size="7" style="color:#000; font-family: Sen-Bold;">Product</font><br>
 	<font class="showcase" id="showcase">
 		<canvas width="16" height="9" class="product "id="product">Canvas</canvas>
 	</font>
 	
-	<div class="debug" hidden>
+	<div class="debug">
 	Debug:
 	<input type="range" min="0" max="1000" value="0" class="xpos" oninput="onInput3()" id="xpos">
 	<input type="range" min="0" max="1000" value="0" class="ypos" oninput="onInput3()" id="ypos">
@@ -211,6 +219,6 @@
 	
 	<script src="script.js"></script>
 	
-	
+	</center>
 </body>
 </html>
